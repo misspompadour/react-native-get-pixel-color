@@ -1,25 +1,22 @@
 # react-native-get-pixel-color
 
-[![npm version](https://img.shields.io/npm/v/react-native-get-pixel-color.svg)](https://www.npmjs.com/package/react-native-get-pixel-color)
-[![npm](https://img.shields.io/npm/dt/react-native-get-pixel-color.svg)](https://www.npmjs.com/package/react-native-get-pixel-color)
-
 ## Description
 Get HEX color value from image in React Native. Works both for iOS and Android.
 
 ## Getting started
 
-`$ npm install react-native-get-pixel-color --save`
+`$ npm install @thebeka/react-native-get-pixel-color --save`
 
 or
 
-`$ yarn add react-native-get-pixel-color`
+`$ yarn add @thebeka/react-native-get-pixel-color`
 
 ## Important note
 For iOS you should pass the path to the file, however for Android you should pass base64 string of the image. In the near future both implementations would be unified to both use only one of these options.
 
 ## Usage (iOS)
 ```javascript
-import GetPixelColor from 'react-native-get-pixel-color';
+import GetPixelColor from '@thebeka/react-native-get-pixel-color';
 
 // upload image
 GetPixelColor.init(pathToFile)
@@ -42,7 +39,7 @@ GetPixelColor.pickColorAt(x, y)
 
 ## Usage (Android)
 ```javascript
-import GetPixelColor from 'react-native-get-pixel-color';
+import GetPixelColor from '@thebeka/react-native-get-pixel-color';
 
 // upload image
 GetPixelColor.init(base64)
@@ -69,3 +66,7 @@ At this moment iOS implementation of this module is forked from https://github.c
 
 The main difference is that we upload an image only once and picking colors by coordinates as many times as we want. 
 In the original implementation the new image was uploaded each time we want to pick 1 pixel
+
+## NOTE
+
+This is my first public repo that so I'm open to criticism of ANY kind
