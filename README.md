@@ -66,7 +66,3 @@ At this moment iOS implementation of this module is forked from https://github.c
 
 The main difference is that we upload an image only once and picking colors by coordinates as many times as we want. 
 In the original implementation the new image was uploaded each time we want to pick 1 pixel
-
-## NOTE
-
-This is my first public repo that so I'm open to criticism of ANY kind
