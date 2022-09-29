@@ -39,6 +39,6 @@ export const pickColorAt = (x, y) => new Promise((resolve, reject) => {
 });
 
 export default {
-  setImage,
+  init,
   pickColorAt,
 };
